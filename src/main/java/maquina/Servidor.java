@@ -3,13 +3,14 @@ package maquina;
 import javax.swing.JOptionPane;
 import javax.xml.ws.Endpoint;
 import java.rmi.registry.LocateRegistry;
+import java.rmi.server.UnicastRemoteObject;
 import java.rmi.registry.Registry;
 
 public class Servidor {
     public static void main(String[] args) {
         try {
             // Configuração do RMI
-            Maquina maquinaRMI = new Rmi();
+            UnicastRemoteObject maquinaRMI = new UnicastRemoteObject();
             Registry registry = LocateRegistry.createRegistry(1099);
             registry.rebind("Maquina", maquinaRMI);
 
