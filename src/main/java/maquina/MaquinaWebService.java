@@ -15,6 +15,6 @@ public interface MaquinaWebService {
     @GET
     @Path("/pegaSnack/{nome}/{dinheiro}")
     @Produces(MediaType.TEXT_PLAIN)
-    String pegaSnack(@PathParam("nome") String nome, @PathParam("dinheiro") double dinheiro);
+    String pegaSnack(@PathParam(value = "nome") String nome, @PathParam(value = "dinheiro") double dinheiro, String usuario);
     
 }

@@ -1,8 +1,9 @@
-maquina\MaquinaResource.class
-maquina\Maquina.class
-maquina\Cliente$1.class
+maquina\MeuBotao.class
+maquina\ClienteUsuario$1.class
+maquina\ClienteUsuario.class
 maquina\MaquinaWebService.class
 maquina\Servidor.class
-maquina\Rmi.class
-maquina\Cliente.class
+maquina\ClienteProvedor$1.class
+maquina\MaquinaInterfaceRMI.class
+maquina\ClienteProvedor.class
 maquina\Produto.class
